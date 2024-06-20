@@ -20,4 +20,7 @@ dataout <- paste(main, "dataout", sep = "/")
 temp <- paste(main, "temp", sep = "/")
 
 # read data file 
-
+df <- read_excel(path = paste(dataraw, 
+                              "euros_stadiums.xlsx",
+                              sep = "/"),
+                 sheet = "Sheet1")
