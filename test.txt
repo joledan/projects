@@ -1,1 +1,2 @@
-ECHO is on.
+ECHO is on. test commit 
+ test 2
