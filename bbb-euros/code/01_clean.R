@@ -14,7 +14,7 @@ library(fuzzyjoin)
 user <- Sys.getenv("USERNAME")
 # specify project folder
 project <- "bbb-euros"
-main <- paste0("C:/Users/", user, "/Documents/Github/projects", project)
+main <- paste0("C:/Users/", user, "/Documents/Github/projects/", project)
 dataraw <- paste(main, "dataraw", sep = "/")
 dataout <- paste(main, "dataout", sep = "/")
 temp <- paste(main, "temp", sep = "/")
@@ -24,3 +24,7 @@ df <- read_excel(path = paste(dataraw,
                               "euros_stadiums.xlsx",
                               sep = "/"),
                  sheet = "Sheet1")
+
+
+# count unique stadiums
+n_distinct(df$stadium)
